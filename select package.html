@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select a package </title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
+</head>
+<script>
+function getvalue(temp)
+{
+document.getElementById("rupee").value=temp.value;
+document.getElementById("msg").value="";
+document.getElementById("paise").value="00";
+}
+ function getmessage(temp){
+    
+        document.getElementById("msg").value=temp.value;
+        document.getElementById("rupee").value="";
+        document.getElementById("paise").value="";
+    }
+</script>
+<body>
+    
+<form name="form1"  onsubmit="return validateForm()" method="post">
+    <section class="container">
+    <hgroup class="row mt-4 mb-4">
+  <aside>
+    <div class="row"> Select a package:</div>
+     <input type="radio" id="package" name="package" value="500" onclick="getvalue(this)">one time assessment only(INR 500)
+    <br>
+    
+    <input type="radio" id="package" name="package" value="400" onclick="getvalue(this)">4 weekly sessions(INR 400/session)
+    <br>
+    
+    <input type="radio" id="package" name="package" value="300" onclick="getvalue(this)">12 weekly sessions (INR 300/session)
+    <br>
+    
+    <input type="radio" id="package" name="package" value="Quote will be shared on phone call" onclick="getmessage(this)"/> others <input type="text" id="msg" readonly/>
+    <br>
+    
+    <div class="row">Quote:</div>
+   <div class="row"><input type="text" id="rupee" readonly>INR<input type="text" id="paise" readonly>Paise
+    </div>
+    <br>
+        
+<div class="row"></div><input type="submit" value="Submit"></div>
+</aside>
+</hgroup>
+</section>
+
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    	
+</body>
+</html> 
