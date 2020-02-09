@@ -1,0 +1,8 @@
+My associate id:
+844576
+Other team members:
+844565,844566,844582,844628
+Team lead:
+844565
+My Role in team:
+1.To develop select a package  i have appiled  html,bootstrap and validation.
